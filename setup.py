@@ -33,6 +33,7 @@ setup(
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     python_requires=">=3.7, <4",
+    include_package_data=True,
     install_requires=install_requires,
     entry_points={"console_scripts": ["c-explo = color_explo.cli.main:cli"]},
 )
