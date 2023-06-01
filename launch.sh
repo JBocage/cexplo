@@ -1,0 +1,1 @@
+streamlit run ./src/color_explo/st_app/main.py
