@@ -1,8 +1,11 @@
 """This file implements a command line interface"""
 
+import os
+
 import click
 
 from color_explo import __VERSION__
+from color_explo.utils.paths import PackagePaths
 
 
 class Config(object):
@@ -29,3 +32,5 @@ def cli(ctx, *args, **kwargs):
 
     # Do something with the args
     print(args)
+
+    os.system(f"streamlit run {PackagePaths.APP_START.as_posix()}")
