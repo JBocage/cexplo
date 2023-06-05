@@ -2,3 +2,4 @@ click
 matplotlib
 pandas
 streamlit
+tk
