@@ -31,6 +31,9 @@ def cli(ctx, *args, **kwargs):
     args = ctx.obj.config
 
     # Do something with the args
-    print(args)
+    # print(args)
 
-    os.system(f"streamlit run {PackagePaths.APP_START.as_posix()}")
+    # os.system(f"streamlit run {PackagePaths.APP_START.as_posix()}")
+    from color_explo.tk_int.main import main
+
+    main()
